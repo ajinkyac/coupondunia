@@ -1,0 +1,62 @@
+/*
+	-------------------------------------------------------------------------------------------------------------------------------------------------------
+	- Styling for the tabs, overridden in app.scss for smaller viewports																			  	  -
+	-------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+.cdSlider {
+	.tabs {
+		list-style: none;
+		margin: $zeroUnit;
+		padding: $zeroUnit;		
+		float: left;
+		width: $fullWidth;
+
+		LI.tab-head {
+			display: block;
+			float: $allTheLefts;
+			cursor: pointer;
+
+			A {
+				text-decoration: none;
+				padding: 10px 16px;
+				display: inline-block;
+				background: $sliderBgColorNormalMode;
+				margin-right: 1px;
+			}
+
+			A:hover {
+				background: $tabHoverBgColorNormalModel;
+				color: #000;
+			}
+		}
+
+		LI.current A {
+			background: $tabHoverBgColorNormalModel;
+		}
+	}
+
+	.tab-content {
+		float: $allTheLefts;
+		width: $fullWidth;
+		position: relative;
+
+		.tab-panel {
+			padding: 10px;
+			width: $fullWidth;
+			-webkit-transition: $tabTransitionAnimation;
+    		-moz-transition: $tabTransitionAnimation;
+    		-o-transition: $tabTransitionAnimation;
+			transition: $tabTransitionAnimation;
+    		opacity: $zeroUnit;
+    		height: $zeroUnit;
+    		overflow: hidden;
+    		background-color: $tabHoverBgColorNormalModel;
+    		position: absolute;
+		}
+
+		.tab-panel.active {
+			opacity: 1;
+    		height: auto;
+		}
+	}
+}

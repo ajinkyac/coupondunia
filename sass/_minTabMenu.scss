@@ -1,0 +1,21 @@
+/*
+	-------------------------------------------------------------------------------------------------------------------------------------------------------
+	- Styling for the tab menu, overridden in app.scss for smaller viewports																			  -
+	-------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+.cdSlider {
+	.tab-menu {
+		background: url("../images/navmenu.png") no-repeat scroll 87% center #121212;
+		color: $whiteTextColor;
+		margin: $zeroUnit;
+		padding: 1rem $zeroUnit 1rem 4rem;
+		text-align: $allTheLefts;
+		display: none;
+		cursor: pointer;
+		width: $fullWidth;
+
+		SPAN {
+			margin-left: 14rem;
+		}
+	}
+}

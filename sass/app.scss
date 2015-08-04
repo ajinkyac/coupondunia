@@ -1,0 +1,48 @@
+/*
+	-------------------------------------------------------------------------------------------------------------------------------------------------------
+	- CSS resets and typography are not added since this is a plugin and it should inherit the resets and fonts from the parent application				  -
+	-------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+@import 'variables';
+@import 'minTabMenu';
+@import 'tabs';
+
+@media only screen and (max-width: 768px) {
+	.cdSlider {
+		position: relative;
+
+		.tab-menu {
+			display: block;
+		}
+
+		.tabs {
+			position: absolute;
+			left: 0.5rem;
+			z-index: 99999;
+			float: none;
+			right: $zeroUnit;
+			top: 3.1rem;
+			display: none;
+
+			LI.tab-head {
+				float: $allTheRights;
+				clear: $allTheRights;
+
+				A {
+					padding: 0.624rem 2rem;
+					margin: $zeroUnit;
+				}
+
+				A:hover {
+					background: $sliderBgColorForMedia;
+					color: #000;
+				}
+			}
+
+			LI.current A {
+				background: $sliderBgColorForMedia;
+			}
+		}
+	}
+}
